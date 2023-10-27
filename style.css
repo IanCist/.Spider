@@ -25,15 +25,15 @@ html:hover .spider {
     width: 2px;
     height: 200px;
     margin-left: 49px;
-    background: rgba(255,255,255, .7);
+    background: black;
 }
 
 .spider .body {
     width: 100px;
     height: 100px;
-    background: #;
+    background: black;
     position: relative;
-    border-radius: 50%;
+    border-radius: 50%; 
 }
 
 .spider .body .eye {
@@ -163,5 +163,10 @@ html:hover .spider {
 }
 
 .lightswitch {
-    background-color: white;
+    
+}
+
+.img {
+    width: 20%;
+    height: 20%;
 }

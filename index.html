@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
     <div class="spider">
         <div class="spiderweb"></div>
         <div class="body">
@@ -30,8 +29,28 @@
             <div class="leg"></div>
         </div>
     </div>
-    <button class="lightswitch"> Light switch </button>
 
+    <img id="colorChangeButton" src="images/5722697.png" alt="Change Color" class="img">
+
+    <script>
+        // Get a reference to the button element
+        const colorChangeButton = document.getElementById("colorChangeButton");
+
+        // Add a click event listener to the button
+        colorChangeButton.addEventListener("click", function() {
+            // Get a reference to the HTML element
+            const htmlElement = document.documentElement;
+
+            // Check the current background color
+            if (htmlElement.style.backgroundColor === "black" || htmlElement.style.backgroundColor === "") {
+                // Change the background color to white
+                htmlElement.style.backgroundColor = "white";
+            } else {
+                // Change the background color to black
+                htmlElement.style.backgroundColor = "black";
+            }
+        });
+    </script>
 </body>
 
 </html>
